@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ServerConfig>
+	<ServerPort>8888</ServerPort>
+	<StopServerPort>8890</StopServerPort>
+	<ServerName>MyFineServer</ServerName>
+	<ServerDebug>Information</ServerDebug>
+</ServerConfig>
