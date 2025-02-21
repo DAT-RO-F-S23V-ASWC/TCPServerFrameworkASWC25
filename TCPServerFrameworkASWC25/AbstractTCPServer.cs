@@ -84,9 +84,8 @@ namespace TCPServerFrameworkASWC25
                 {
                     Thread.Sleep(100);
                 }
-
-                Task.WaitAll(tasks.ToArray());
             }
+            Task.WaitAll(tasks.ToArray());
         }
 
         private void DoOneClient(TcpClient sock)
@@ -114,7 +113,7 @@ namespace TCPServerFrameworkASWC25
         /// The default stop server will stop at the text line 'stop'
         /// Can be overidden
         /// </summary>
-        private protected virtual void StopServer()
+         protected virtual void StopServer()
         {
             TcpListener listener = new TcpListener(IPAddress.Any, cfg.StopPort);
             listener.Start();
